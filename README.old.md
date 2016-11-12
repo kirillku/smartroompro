@@ -1,2 +1,0 @@
-# smartroompro
-Smart Room Pro
