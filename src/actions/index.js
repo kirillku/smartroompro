@@ -6,4 +6,10 @@ export const startPreset = (id) => ({
 export const stopPreset = (id) => ({
     type: 'STOP_PRESET',
     id
-})
+});
+
+export const updatePreset = (id, conditions) => ({
+    type: 'STOP_PRESET',
+    id,
+    conditions
+});

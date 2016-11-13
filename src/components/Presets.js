@@ -3,12 +3,12 @@ import Preset from './Preset';
 import Conditions from './Conditions';
 import Feedback from './Feedback';
 
-const Presets = ({ presets, current, onStopClick, onStartClick }) => {
+const Presets = ({ presets, current, onStopClick, onStartClick, updatePreset }) => {
     var component = current.active
         ? (
             <div>
               <h1>{presets[current.id].name}</h1>
-              <Conditions {...presets[current.id].conditions} />
+              <Conditions {...presets[current.id].conditions} updatePreset={updatePreset} />
               <Feedback />
               <div
                 className="Preset btn btn-default"

@@ -4,12 +4,12 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 70px;
 }
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 180px;
   padding: 20px;
   color: white;
 }
@@ -38,9 +38,17 @@ textarea {
     display: block;
     width: 80%;
     float: none;
-    margin: 0 auto
+    margin: 0 auto;
+    resize: vertical;
 }
 
-.Condition {
-    font-size: 2em
+table {
+    width: 80%;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2.7em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 2px;
 }

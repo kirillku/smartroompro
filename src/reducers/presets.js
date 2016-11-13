@@ -7,7 +7,7 @@ const defaultPresets = [
             temperature: 22,
             lighting: .7,
             co2: 390,
-            pressure: 781
+            humidity: .781
         }
     },
     {
@@ -18,7 +18,7 @@ const defaultPresets = [
             temperature: 19,
             lighting: .6,
             co2: 450,
-            pressure: 768
+            humidity: .768
         }
     },
     {
@@ -29,7 +29,7 @@ const defaultPresets = [
             temperature: 20,
             lighting: 1,
             co2: 400,
-            pressure: 767
+            humidity: .767
         }
     },
     {
@@ -40,7 +40,7 @@ const defaultPresets = [
             temperature: 20,
             lighting: 1,
             co2: 420,
-            pressure: 770
+            humidity: .770
         }
     },
     {
@@ -51,7 +51,7 @@ const defaultPresets = [
             temperature: 20,
             lighting: 1,
             co2: 430,
-            pressure: 777
+            humidity: .777
         }
     }
 ];
@@ -59,7 +59,13 @@ const defaultPresets = [
 const preset = (state, action) => {
     switch (action.type) {
         case 'UPDATE_PRESET':
-            return state;
+            return {
+                ...state,
+                conditions: {
+                    ...state.conditions,
+                    ...action.conditions
+                }
+            }
         default:
             return state;
     }

@@ -1,6 +1,4 @@
 import React from 'react';
-// import Footer from './Footer';
-// import Stopwatch from '../Stopwatch';
 import PresetList from '../containers/PresetList';
 import '../App.css';
 

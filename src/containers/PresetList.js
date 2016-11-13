@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { startPreset, stopPreset } from '../actions';
+import { startPreset, stopPreset, updatePreset } from '../actions';
 import Presets from '../components/Presets';
 
 const mapStateToProps = (state) => {
@@ -8,7 +8,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = ({
     onStartClick: startPreset,
-    onStopClick: stopPreset
+    onStopClick: stopPreset,
+    updatePreset
 });
 
 const PresetList = connect(
