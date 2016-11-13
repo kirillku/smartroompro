@@ -24,7 +24,23 @@
 }
 
 .Preset {
-    border: 5px solid #222;
-    font-size: large;
-    margin: 1em 20em;
+    display: block;
+    margin: .5em 1em;
+    font-size: 2em;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+textarea {
+    display: block;
+    width: 80%;
+    float: none;
+    margin: 0 auto
+}
+
+.Condition {
+    font-size: 2em
 }

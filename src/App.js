@@ -18,9 +18,7 @@ function smartroom(state = {
   }
 }
 
-const SmartRoomPro = ({
-        store,
-    }) => {
+const SmartRoom = ({ store }) => {
     return (
       <div className="Preset">
         <p>{store.preset.name}</p>
@@ -38,7 +36,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>SmartRoom</h2>
         </div>
-        <SmartRoomPro
+        <SmartRoom
             store={store.getState()}
         />
       </div>
